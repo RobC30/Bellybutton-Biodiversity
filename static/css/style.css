@@ -1,0 +1,44 @@
+html    {
+
+    background-color: #ced8f1;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.panel, .well {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    border-color: #f08582;
+    text-align: center;     
+
+
+}
+
+.panel-body    {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: center; 
+
+}
+
+.bar, .gauge, .bubble {
+
+    background-color: #ced8f1;
+    border-color: #f08582;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.jumbotron {
+    background-image: url("../images/bellybg.png");
+    background-size: 100% 175%;
+    background-color: #fae4c9;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}

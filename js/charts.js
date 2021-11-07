@@ -95,13 +95,14 @@ function buildCharts(sample) {
     let barData = [{
         x: sample_values.slice(0,10).reverse(),
         y: yticks,
+        marker: {color:[ '#f08582','#f08582','#657b83','#f08582','#657b83','#f08582','#657b83','#f08582','#657b83','#f08582']},
         text: otu_labels,
         type:'bar',
         orientation:'h'
     }]
     // // 9. Create the layout for the bar chart. 
     let barLayout = {
-      title: 'Top 10 Bacteria Cultures Found',
+      title: '<b>Top 10 Bacteria Cultures Found</b>',
     }
 
     // 10. Use Plotly to plot the data with the layout. 
@@ -125,8 +126,8 @@ function buildCharts(sample) {
 
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
-      title: 'Bacteria Cultures per Sample',
-      xaxis: {title:'OTU ID'}
+      title: '<b>Bacteria Cultures per Sample</b>',
+      xaxis: {title:'<b>OTU ID</b>'}
     }
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot('bubble', bubbleData, bubbleLayout)
